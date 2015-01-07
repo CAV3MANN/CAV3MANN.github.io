@@ -15,7 +15,8 @@ var draw = function() {
     
     context.fillRect(Math.floor(tempX), viewport.height / 2, 50, 50);
     
-    textArt.fillText("HELLO EVERYONE! The box has bounced "+bounceAmount+" times!!", 10,10);
+    textArt.font = "16px Arial";
+    textArt.fillText("HELLO EVERYONE! The box has bounced "+bounceAmount+" times!!", 10,20);
     
 };
 
