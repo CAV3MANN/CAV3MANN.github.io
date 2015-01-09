@@ -4,21 +4,10 @@ var context;
 var start = Date.now();
 var then = Date.now();
 var viewport;
-var bounceAmount=0;
-
+var bounceAmount = 0;
 var textArt;
 
-var draw = function() {
-    context.clearRect(0, 0, viewport.width, viewport.height);
 
-    context.fillStyle = "black";
-    
-    context.fillRect(Math.floor(tempX), viewport.height / 2, 50, 50);
-    
-    textArt.font = "16px Arial";
-    textArt.fillText("HELLO EVERYONE! The box has bounced "+bounceAmount+" times!!", 10,20);
-    
-};
 
 var game = function() {
     var now = Date.now();
@@ -28,6 +17,18 @@ var game = function() {
     draw();
 
     then = now;
+};
+
+var draw = function() {
+    context.clearRect(0, 0, viewport.width, viewport.height);
+
+    context.fillStyle = "black";
+
+    context.fillRect(Math.floor(tempX), viewport.height / 2, 50, 50);
+
+    textArt.font = "16px Arial";
+    textArt.fillText("HELLO EVERYONE! The box has bounced " + bounceAmount + " times!!", 10, 20);
+
 };
 
 var resize = function() {
@@ -54,13 +55,13 @@ var resize = function() {
 };
 
 var update = function(deltaTime) {
-    tempX += (500*xDir) * deltaTime;
-    if (tempX+50 > viewport.width) {
+    tempX += (500 * xDir) * deltaTime;
+    if (tempX + 50 > viewport.width) {
         xDir = -1;
-        bounceAmount+=1;
+        bounceAmount += 1;
     }
-    else if(tempX < 0){
+    else if (tempX < 0) {
         xDir = 1;
-        bounceAmount+=1;
+        bounceAmount += 1;
     }
 };
