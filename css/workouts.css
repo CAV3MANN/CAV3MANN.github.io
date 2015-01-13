@@ -1,13 +1,13 @@
 /*Some styles (such as .masonry and .items) http://w3bits.com/css-masonry/ */
 
-html{
-    background:Gray;
+html {
+    background: Gray;
 }
 body {
     font: 1em/1 'Open Sans', Arial, Sans-serif;
     margin: 0;
 }
-img{
+img {
     max-width: 100%;
     height: auto;
     display: block;
@@ -30,7 +30,6 @@ img{
     padding: 1.5em;
     margin: 0 0 1.5em;
     width: 100%;
-    
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -39,7 +38,6 @@ img{
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
 }
-
 @media only screen and (min-width: 700px) {
     .masonry {
         -moz-column-count: 2;
@@ -53,7 +51,6 @@ img{
         -webkit-column-count: 3;
         column-count: 3;
     }
-    
 }
 @media only screen and (min-width: 1100px) {
     .masonry {
@@ -62,58 +59,65 @@ img{
         column-count: 4;
     }
 }
-
 @media only screen and (min-width: 1280px) {
     .wrapper {
         width: 1260px;
     }
 }
-
-#ChestTri,#BackBi,#Shoulders,#Legs{
-    max-width: 100%;
-    height: auto;
+#ChestTri,
+#BackBi,
+#Shoulders,
+#Legs {
+    background: RGB(111, 111, 111);
+}
+#ChestTri {
+    color: RGB(0, 255, 255);
+}
+#BackBi {
+    color: RGB(255, 0, 255);
+}
+#Shoulders {
+    color: RGB(255, 255, 0);
+}
+#Legs {
+    color: RGB(0, 255, 0);
+}
+#Abs {
+    background: Red;
+}
+h1.title {
+    text-align: center;
+    margin: 10;
+}
+h2 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
     display: block;
 }
-
-#ChestTri{
-    background:Blue;
+ul {
+    margin: 0 auto;
+    padding-left: 25;
 }
-
-#BackBi{
-    background:Red;
+.Chest {
+    color: White;
 }
-
-#Shoulders{
-    background:Green;
+.Tri {
+    color: Black;
 }
-
-#Legs{
-    background:Yellow;
+.Back {
+    color: Yellow;
 }
-
-h1{
-  padding:0;
-  margin:0;
+.Bi {
+    color: Black;
 }
-
-ul{
-    margin-top:0;
-    margin-bottom:0;
-    padding-left:25;
-}
-
-.Chest{
-    color:White;
-}
-
-.Tri{
+.Shoulders{
     color:Black;
 }
-
-.Back{
-    color:Yellow;
-}
-
-.Bi{
-    color:Black;
+.subtitle {
+    font-size: 1em;
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 6;
 }
