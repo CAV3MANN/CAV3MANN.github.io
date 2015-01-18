@@ -1,4 +1,4 @@
-<a href="http://CAV3MANN.github.io/" title="Joshua's Website">Joshua's Playground</a>
+<a href="http://CAV3MANN.github.io/" title="Joshua's Website">Joshua's Website</a>
 ==================
 <p>Eventually this will be the personal site for Joshua Daniel Miller, student of Wisconsin Stout.<br>Considering using <a href="http://nanoc.ws/" title="Nanoc.ws">Nanoc</a> to generate the static webpage.</p>
 <p>Some helpful links in building an HTML5 website (maybe):
