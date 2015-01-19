@@ -7,3 +7,10 @@
     <li><a href="http://www.w3schools.com/html/html5_canvas.asp" title="w3Schools">HTML5 Canvas</a></li>
   </ul>
 </p>
+
+<p>Some sites/repos I have used as resources:
+  <ul>
+    <li><a href="http://fortawesome.github.io/Font-Awesome/" title="Font Awesome">Icons</a></li>
+    <li><a href="http://brandcolors.net/" title="BrandColors">Brand Colors</a></li>
+  </ul>
+</p>
